@@ -38,8 +38,27 @@ npm run dev
 - **Tailwind CSS** - 样式框架
 - **Geist Font** - 字体
 
+## 在线访问
+
+🌐 **生产环境：** [https://claude-code-infrastructure-test-7z6dcxmu9-amadeusgbs-projects.vercel.app](https://claude-code-infrastructure-test-7z6dcxmu9-amadeusgbs-projects.vercel.app)
+
 ## 部署
 
-最简单的方式是使用 [Vercel Platform](https://vercel.com/new) 进行部署。
+本项目已部署到 [Vercel Platform](https://vercel.com/new)，每次推送到 `main` 分支会自动触发部署。
+
+### 手动部署
+
+使用 Vercel CLI 进行部署：
+
+```bash
+# 安装 Vercel CLI（如果未安装）
+npm i -g vercel
+
+# 登录 Vercel
+vercel login
+
+# 部署到生产环境
+vercel --prod
+```
 
 查看 [Next.js 部署文档](https://nextjs.org/docs/app/building-your-application/deploying) 了解更多详情。
