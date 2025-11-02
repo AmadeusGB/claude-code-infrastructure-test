@@ -24,6 +24,55 @@
           "skill.*?(work|trigger|activate|system)"
         ]
       }
+    },
+    "nextjs-development": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high",
+      "description": "Next.js development best practices for App Router, Server/Client Components, routing, and performance",
+      "promptTriggers": {
+        "keywords": [
+          "Next.js",
+          "Next",
+          "nextjs",
+          "App Router",
+          "Server Component",
+          "Client Component",
+          "服务端组件",
+          "客户端组件",
+          "page.tsx",
+          "layout.tsx",
+          "loading.tsx",
+          "error.tsx",
+          "next.config",
+          "generateStaticParams",
+          "generateMetadata",
+          "revalidate",
+          "use client",
+          "use server"
+        ],
+        "intentPatterns": [
+          "(创建|添加|新建|生成).*?(页面|路由|组件|布局)",
+          "(create|add|build|generate).*?(page|route|component|layout)",
+          "(配置|设置|优化).*?(Next|路由|性能)",
+          "(configure|setup|optimize).*?(Next|routing|performance)",
+          "动态路由",
+          "dynamic.*?route",
+          "数据.*?(获取|请求)",
+          "(fetch|get).*?data"
+        ]
+      },
+      "fileTriggers": {
+        "pathPatterns": [
+          "**/app/**/*.tsx",
+          "**/app/**/*.ts",
+          "**/app/**/page.tsx",
+          "**/app/**/layout.tsx",
+          "**/app/**/loading.tsx",
+          "**/app/**/error.tsx",
+          "**/next.config.*"
+        ]
+      }
     }
   }
 }
