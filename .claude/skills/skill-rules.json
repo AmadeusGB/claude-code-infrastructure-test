@@ -73,6 +73,71 @@
           "**/next.config.*"
         ]
       }
+    },
+    "api-development": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high",
+      "description": "RESTful API development best practices for Node.js, Express, TypeScript with comprehensive guidance on endpoints, routes, middleware, authentication, and error handling",
+      "promptTriggers": {
+        "keywords": [
+          "API",
+          "api",
+          "REST",
+          "RESTful",
+          "endpoint",
+          "endpoints",
+          "route",
+          "routes",
+          "路由",
+          "接口",
+          "middleware",
+          "中间件",
+          "Express",
+          "Fastify",
+          "Koa",
+          "HTTP",
+          "status code",
+          "状态码",
+          "authentication",
+          "authorization",
+          "认证",
+          "鉴权",
+          "validation",
+          "验证",
+          "error handling",
+          "错误处理"
+        ],
+        "intentPatterns": [
+          "(create|add|build|implement).*?(API|api|endpoint|route)",
+          "(创建|添加|构建|实现).*?(API|接口|路由|端点)",
+          "(design|设计).*?(API|接口|架构)",
+          "(handle|处理).*?(error|错误|异常)",
+          "(add|添加).*?(middleware|中间件)",
+          "(setup|configure|配置|设置).*?(auth|认证|鉴权)"
+        ]
+      },
+      "fileTriggers": {
+        "pathPatterns": [
+          "**/routes/**/*.ts",
+          "**/routes/**/*.js",
+          "**/api/**/*.ts",
+          "**/api/**/*.js",
+          "**/controllers/**/*.ts",
+          "**/controllers/**/*.js",
+          "**/middleware/**/*.ts",
+          "**/middleware/**/*.js"
+        ],
+        "contentPatterns": [
+          "express\\(\\)",
+          "Router\\(\\)",
+          "app\\.(get|post|put|patch|delete)",
+          "router\\.(get|post|put|patch|delete)",
+          "Request.*Response",
+          "middleware",
+          "NextFunction"
+        ]
+      }
     }
   }
 }
